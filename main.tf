@@ -7,10 +7,9 @@ terraform {
     }
 }
 variable {
-    name = client_secret
+    name = ARM_CLIENT_SECRET
     type = string
 }
-
 provider "azurerm" {
     subscription_id = "51c7239f-55d9-49c2-8878-d9ac2918dc68"
     client_id = "f08630de-a906-4485-8487-4e38240ca663"
