@@ -6,7 +6,7 @@ terraform {
         }
     }
 }
-variable "ARM_CLIENT_ID" {
+variable "ARM_CLIENT_SECRET" {
     type = string
 }
 provider "azurerm" {
