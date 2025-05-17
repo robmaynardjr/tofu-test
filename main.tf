@@ -6,8 +6,7 @@ terraform {
         }
     }
 }
-variable {
-    name = ARM_CLIENT_SECRET
+variable "ARM_CLIENT_ID" {
     type = string
 }
 provider "azurerm" {
