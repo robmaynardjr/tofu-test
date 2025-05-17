@@ -49,7 +49,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     name = "tofu-vm"
     location = azurerm_resource_group.rg.location
     resource_group_name = azurerm_resource_group.rg.name
-    size = "B2pts"
+    size = "Standard_D2a_v4"
     disable_password_authentication = false
     admin_username = "adminuser"
     admin_password = var.admin_password
