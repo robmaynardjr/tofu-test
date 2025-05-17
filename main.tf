@@ -56,6 +56,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     os_disk {
         caching = "ReadWrite"
         create_option = "FromImage"
+        storage_account_type = "Standard_LRS"
     }
     source_image_reference {
         publisher = "Canonical"
