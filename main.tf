@@ -57,10 +57,6 @@ resource "azurerm_linux_virtual_machine" "vm" {
         caching = "ReadWrite"
         create_option = "FromImage"
     }
-    admin_ssh_key {
-        username = "adminuser"
-        public_key = file("~/.ssh/id_rsa.pub")
-    }
     source_image_reference {
         publisher = "Canonical"
         offer = "UbuntuServer"
